@@ -1,5 +1,9 @@
 const db = require('../db')
 
+const { Race } = require('../models/race.js')
+
+db.on('error', console.error.bind(console, 'MongoDB Race connection error:'))
+
 const main = async () => {
     const raceData = [
         { name: 'Human' },
@@ -7,6 +11,13 @@ const main = async () => {
         { name: 'Half-Elf'}
     ]
 }
+
+const run = async 90 => {
+    await main()
+    db.close()
+}
+
+run()
 
 
 

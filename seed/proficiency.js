@@ -1,11 +1,22 @@
 const db = require('../db')
 
+const { Proficiencies } = require('../models/proficiency.js')
+
+db.on('error', console.error.bind(console, 'MongoDB Proficiencies connection error:'))
+
 const main = async () => {
     const humanProficiencies = [
         { race: Human, }
 
     ]
 }
+
+const run = async () => {
+    await main()
+    db.close()
+}
+
+run()
 
 // race: id proficiencies? use id of race
 // maybe, click human loads up human (attached proficiencies) and the 

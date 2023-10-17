@@ -1,4 +1,4 @@
-const db = require('../db')
+const db = require('../db/index')
 
 const { Spell } = require('../models/spells.js')
 
@@ -533,3 +533,4 @@ const run = async () => {
 }
 
 run()
+

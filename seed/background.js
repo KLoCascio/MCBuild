@@ -1,5 +1,9 @@
 const db = require('../db')
 
+const { Background } = require('../models/abilities.js')
+
+db.on('error', console.error.bind(console, 'MongoDB Background connection error:'))
+
 const main = async () => {
     const backgroundData = [
         { name: 'Acolyte', proficiency1: 'Insight', proficiency2: 'Religion' },
@@ -15,5 +19,12 @@ const main = async () => {
         { name: 'Urchin', proficiency1: 'Sleight of Hand', proficiency2: 'Stealth' },
     ]
 }
+
+const run = async () => {
+    await main()
+    db.close()
+}
+
+run()
 
 // I need to link the proficiencies by id here to enable them on the hero.
