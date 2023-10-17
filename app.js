@@ -1,4 +1,5 @@
 const express = require('express')
+const db = require('./db/index.js')
 const cors = require('cors')
 
 const PORT = process.env.PORT || 3001
@@ -11,6 +12,5 @@ app.use(express.urlencoded( {extended: true} ))
 app.get('/', (req, res) => {
     res.send({ msg: 'Character Builder Server is Working'})
 })
-
 
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`))

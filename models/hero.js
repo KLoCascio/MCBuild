@@ -13,8 +13,6 @@ const Hero = new Schema(
         spells: { type: Schema.Types.ObjectId, ref: 'Spells'},
         abilities: { type: Schema.Types.ObjectId, ref: 'Abilities'},
         skills: { type: Schema.Types.ObjectId, ref: 'Skills' },
-        
-
         background: { type: Schema.Types.ObjectId, ref: 'Background' },
 
     }
