@@ -1,5 +1,4 @@
-const db = require('../db/index')
-
+const db = require('../db')
 const Cantrip = require('../models/cantrips.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Cantrips connection error:'))

@@ -2,8 +2,8 @@ const Ability = require('../models/abilities.js')
 
 async function getAbilities (req, res) {
     try {
-        const allAbilities = await Ability.find()
-        res.status(200).send(allAbilities)
+        const abilities = await Ability.find()
+        res.status(200).send(abilities)
     } catch (e) {
         return res.status(500).json({ error: e.message })
     }

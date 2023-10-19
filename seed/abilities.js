@@ -30,8 +30,10 @@ const main = async () => {
     Wisdom.save()
     
     const Charisma = await new Ability({
-        
+        name: 'Charisma',
+        value: 8
     })
+    Charisma.save()
 }
 
 const run = async () => {

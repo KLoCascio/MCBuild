@@ -1,5 +1,4 @@
 const db = require('../db')
-
 const Spell  = require('../models/spells.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Spells connection error:'))
@@ -533,4 +532,3 @@ const run = async () => {
 }
 
 run()
-
