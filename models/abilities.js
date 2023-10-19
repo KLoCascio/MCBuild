@@ -1,10 +1,11 @@
+const mongoose = require('mongoose')
 const { Schema } = require('mongoose')
 
-const AbilitiesSchema = new Schema(
+const Ability = new Schema(
     {
         name: { type: String, require: true },
-
+        value: { type: Number, require: true }
     }
 )
 
-module.exports = AbilitiesSchema
+module.exports = mongoose.model('abilities', Ability)

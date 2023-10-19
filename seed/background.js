@@ -1,6 +1,6 @@
 const db = require('../db')
 
-const { Background } = require('../models/abilities.js')
+const Background = require('../models/background.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Background connection error:'))
 
@@ -22,7 +22,7 @@ const main = async () => {
 
 const run = async () => {
     await main()
-    db.close()
+    // db.close()
 }
 
 run()

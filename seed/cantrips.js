@@ -1,6 +1,6 @@
 const db = require('../db/index')
 
-const { Cantrip } = require('../models/cantrips.js')
+const Cantrip = require('../models/cantrips.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Cantrips connection error:'))
 
@@ -231,7 +231,7 @@ const main = async () => {
 
 const run = async () => {
     await main()
-    db.close()
+    // db.close()
 }
 
 run()

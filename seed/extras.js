@@ -1,6 +1,6 @@
 const db = require('../db')
 
-const { Extras } = require('../models/extras.js')
+const Extras = require('../models/extras.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Extras connection error:'))
 
@@ -8,7 +8,7 @@ db.on('error', console.error.bind(console, 'MongoDB Extras connection error:'))
 
 const run = async () => {
     await main()
-    db.close()
+    // db.close()
 }
 
 run()

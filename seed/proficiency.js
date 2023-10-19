@@ -1,6 +1,6 @@
 const db = require('../db')
 
-const { Proficiencies } = require('../models/proficiency.js')
+const Proficiency = require('../models/proficiency.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Proficiencies connection error:'))
 
@@ -13,7 +13,7 @@ const main = async () => {
 
 const run = async () => {
     await main()
-    db.close()
+    // db.close()
 }
 
 run()

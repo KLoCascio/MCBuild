@@ -1,6 +1,7 @@
+const mongoose = require('mongoose')
 const { Schema } = require('mongoose')
 
-const SpellsSchema = new Schema(
+const Spell = new Schema(
     {
         name: { type: String, require: true },
         spellClass: { type: String, require: true },
@@ -11,4 +12,4 @@ const SpellsSchema = new Schema(
     }
 )
 
-module.exports = SpellsSchema
+module.exports = mongoose.model('spells', Spell)

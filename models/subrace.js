@@ -1,6 +1,8 @@
+const mongoose = require('mongoose')
+
 const { Schema } = require('mongoose')
 
-const CantripsSchema = new Schema(
+const Subrace = new Schema(
     {
         name: { type: String, require: true },
         spellClass: { type: String, require: true },

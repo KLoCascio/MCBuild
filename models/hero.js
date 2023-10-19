@@ -1,4 +1,8 @@
+const mongoose = require('mongoose')
+
 const { Schema } = require('mongoose')
+
+
 
 const Hero = new Schema(
     {
@@ -17,5 +21,7 @@ const Hero = new Schema(
 
     }
 )
+
+
 
 // use this as the index.js

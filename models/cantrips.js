@@ -1,6 +1,8 @@
+const mongoose = require('mongoose')
+
 const { Schema } = require('mongoose')
 
-const CantripsSchema = new Schema(
+const Cantrip = new Schema(
     {
         name: { type: String, require: true },
         spellClass: { type: String, require: true },
@@ -11,4 +13,4 @@ const CantripsSchema = new Schema(
     }
 )
 
-module.exports = CantripsSchema
+module.exports = mongoose.model('cantrips', Cantrip)

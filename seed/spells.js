@@ -1,6 +1,6 @@
-const db = require('../db/index')
+const db = require('../db')
 
-const { Spell } = require('../models/spells.js')
+const Spell  = require('../models/spells.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Spells connection error:'))
 
@@ -260,7 +260,7 @@ const main = async () => {
         spellClass: 'Transmutation',
         damageType: 'Target',
         dps: 'Until Long Rest',
-        description: 'Conjure four magical berries for yourself or a companion. Creatures who eat a berry regain 1d4 Hit Points. Each berry counts as one Camp Supplies. The berries appear in the targeted creature\'s inventory and disappear after a Long Rest.'
+        description: 'Conjure four magical berries for yourself or a companion. Creatures who eat a berry regain 1d4 Hit Points. Each berry counts as one Camp Supplies. The berries appear in the targeted creature\'s inventory and disappear after a Long Rest.',
         image: '../assets/spells/Goodberry.png'
     })
     SpellGoodberry.save()
@@ -524,12 +524,12 @@ const main = async () => {
         image: '../assets/spells/Wrathful_Smite.png'
     })
     SpellWrathfulSmite.save()
-    
+
 }
 
 const run = async () => {
     await main()
-    db.close()
+    // db.close()
 }
 
 run()

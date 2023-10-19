@@ -1,17 +1,8 @@
 const db = require('../db/index')
 
-const { Subrace } = require('../models/subrace.js')
+const Subrace = require('../models/subrace.js')
 
 db.on('error', console.error.bind(console, 'MongoDB Subrace connection error:'))
-
-// Dragonborn -> Black, Blue, Brass, Bronze, Copper, Gold, Green, Red, Silver, White
-// Drow -> Seldarine Drow, or Lolth Drow
-// Dwarf -> Gold Dwarf, Shield Dwarf, or Duergar
-// Elf -> High Elf, or Wood Elf
-// Gnome -> Forest Gnome, Deep Gnome, and Rock Gnome
-// Half-Elf -> High Half-Elf, Wood Half-Elf, Drow Half-Elf
-// Halfling -> Lightfoot Halfling, and Strongheart Halfling
-// Tiefling -> Asmodeus Tiefling, Mephistopheles Tiefling, and Zariel Tiefling
 
 const main = async () => {
     const dragonbornSubrace = await new Subrace(
@@ -77,5 +68,5 @@ const main = async () => {
 
 const run = async () => {
     await main()
-    db.close()
+    // db.close()
 }
