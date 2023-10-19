@@ -18,13 +18,14 @@
 
     <div id="navbar">
         <nav>
-            <ul class="nav-bar">
-                <a href="index.html">HOME</a>
-                <a href ="#">RACES</a>
-                <a href ="#">CLASSES</a>
-                <a href ="#">CANTRIPS</a>
+            <ul class="navbar">
+                <a href="index.html">HOME</a> |
+                <a href ="#">BACKGROUNDS</a> |
+                <a href ="#">CANTRIPS</a> |
+                <a href ="#">CLASSES</a> |
+                <a href ="#">RACES</a> |
+                <a href ="#">SKILLS</a> |
                 <a href ="#">SPELLS</a>
-                <a href ="#">BACKGROUNDS</a>
             </ul>
         </nav>
     </div>
@@ -33,41 +34,85 @@
         <!-- Area for Input -->
         <div id="heroBuilder">
             <!-- TYPE NAME -->
-            <div id="chooseName"></div>
+            <div id="chooseName">
+                NAME
+            </div>
             <!-- SELECT RACE -->
-            <div id="chooseRace"></div>
+            <div id="chooseRace">
+                <label for="race-name">View Races: </label>
+                <select name="races" id="race-select">
+                    <option value="select">Select Race</option>
+                    <input type="hidden" id="race-choice" name="race-choice">
+                    <!-- Dropdown via JS Script -->
+                </select>
+            </div>
             <!-- SELECT CLASS -->
-            <div id="chooseClass"></div>
+            <div id="chooseClass">
+                CLASS
+            </div>
             <!-- SELECT SUB RACE (STRETCH) -->
             <!-- SELECT CANTRIPS -->
-            <div id="chooseCantrips"></div>
+            <div id="chooseCantrips">
+                CANTRIPS
+            </div>
             <!-- SELECT SPELLS -->
-            <div id="chooseSpells"></div>
+            <div id="chooseSpells">
+                SPELLS
+            </div>
             <!-- SELECT BACKGROUND -->
-            <div id="chooseBackground"></div>
+            <div id="chooseBackground">
+                BACKGROUND
+            </div>
             <!-- ARROW UP/DOWN FOR ABILITIES (STR/DEX/CON/INT/WIS/CHA) -->
-            <div id="chooseAbilities"></div>
+            <div id="chooseAbilities">
+                ABILITIES
+            </div>
             <!-- SELECT SKILLS -->
-            <div id="chooseSkills"></div>
+            <div id="chooseSkills">
+                SKILLS
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <div id="submitBtnDiv">
+                <button class="submitBtn" type="submit">Submit Your Hero!</button>
+            </div>
+
         </div>
 
         <!-- Area for Results -->
         <div id="heroResults">
             <!-- DISPLAY NAME -->
-            <div id="heroName"></div>
+            <div id="heroName">
+                NAME
+            </div>
             <!-- DISPLAY RACE -->
-            <div id="heroRace"></div>
+            <div id="heroRace">
+                RACE
+            </div>
             <!-- DISPLAY SUBRACE (STRETCH) -->
+            <!-- DISPLAY CLASS -->
+            <div id="heroClass">
+                CLASS
+            </div>
             <!-- DISPLAY CANTRIPS -->
-            <div id="heroCantrips"></div>
+            <div id="heroCantrips">
+                CANTRIPS
+            </div>
             <!-- DISPLAY SPELLS -->
-            <div id="heroSpells"></div>
+            <div id="heroSpells">
+                SPELLS
+            </div>
             <!-- DISPLAY BACKGROUND -->
-            <div id="heroBackground"></div>
+            <div id="heroBackground">
+                BACKGROUND
+            </div>
             <!-- DISPLAY STAT SPREAD (ABILITIES) -->
-            <div id="heroAbilities"></div>
+            <div id="heroAbilities">
+                ABILITIES
+            </div>
             <!-- DISPLAY SKILLS -->
-            <div id="heroSkills"></div>
+            <div id="heroSkills">
+                SKILLS
+            </div>
         </div>
 
     </div>
