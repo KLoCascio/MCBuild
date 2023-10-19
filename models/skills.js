@@ -1,16 +1,10 @@
 const mongoose = require('mongoose')
-
 const { Schema } = require('mongoose')
 
-const CantripsSchema = new Schema(
+const Skill = new Schema(
     {
-        name: { type: String, require: true },
-        spellClass: { type: String, require: true },
-        damageType: { type: String, require: true },
-        dps: { type: String, require: true },
-        description: { type: String, require: true },
-        image: { type: String, require: true}
+        skills: { type: Array, require: true },
     }
 )
 
-module.exports = CantripsSchema
+module.exports = mongoose.model('skills', Skill)
