@@ -11,6 +11,8 @@ const raceController = require('./controllers/raceController.js')
 const skillController = require('./controllers/skillController.js')
 const spellController = require('./controllers/spellController.js')
 
+const heroController = require('./controllers/heroController.js')
+
 const PORT = process.env.PORT || 3001
 const app = express()
 
@@ -66,5 +68,11 @@ app.get('/spells/:id', spellController.getSpellById)
 app.post('/spells', spellController.createSpell)
 app.put('/spells/:id', spellController.updateSpell)
 app.delete('spells/:id', spellController.deleteSpell)
+
+app.get('/heroes', heroController.getHeroes)
+app.get('/heroes/:id', heroController.getHeroById)
+app.post('/heroes', heroController.createHero)
+app.put('/heroes/:id', heroController.updateHero)
+app.delete('heroes/:id', heroController.deleteHero)
 
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`))

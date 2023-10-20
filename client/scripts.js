@@ -79,8 +79,48 @@ function selectClass(event) {
 }
 
 ///CANTRIP INPUT
+async function findCantrips() {
+    cantripDb = await axios.get(`http://localhost:3001/cantrips`)
+    let cantrips = cantripDb.data
+    const cantripListOptions = document.querySelector('#cantrip-select')
+    for (let i = 0; i < cantrips.length; i++) {
+        let cantripName = cantrips[i].name
+        let cantripId = cantrips[i]._id
+        cantripListOptions.innerHTML += `<option value="${cantripId}">${cantripName}</options></n>`
+    }
+    cantripListOptions.addEventListener('change', selectCantrip)
+}
+
+findCantrips()
+
+function selectCantrip(event) {
+    const cantrip = event.target.value
+    const cantripName = event.target.options[event.target.selectedIndex].text
+    document.querySelector('#cantrip-option').value = cantrip
+    heroCantrip.innerText = `${cantripName}`
+}
 
 ///SPELL INPUT
+async function findSpells() {
+    spellDb = await axios.get(`http://localhost:3001/spells`)
+    let spells = spellDb.data
+    const spellListOptions = document.querySelector('#spell-select')
+    for (let i = 0; i < spells.length; i++) {
+        let spellName = spells[i].name
+        let spellId = spells[i]._id
+        spellListOptions.innerHTML += `<option value="${spellId}">${spellName}</options></n>`
+    }
+    spellListOptions.addEventListener('change', selectSpell)
+}
+
+findSpells()
+
+function selectSpell(event) {
+    const spell = event.target.value
+    const spellName = event.target.options[event.target.selectedIndex].text
+    document.querySelector('#spell-option').value = spell
+    heroSpell.innerText = `${spellName}`
+}
 
 ///BACKGROUND INPUT
 async function findBackground() {
@@ -107,6 +147,26 @@ function selectBackground(event) {
 ///ABILITIES INPUT
 
 ///SKILL INPUT
+// async function findSkills() {
+//     skillDb = await axios.get(`http://localhost:3001/skills`)
+//     let skills = skillDb.data
+//     const skillListOptions = document.querySelector('#skill-select')
+//     for (let i = 0; i < skills.length; i++) {
+//         let skillName = skills[i].name
+//         let skillId = skills[i]._id
+//         skillListOptions.innerHTML += `<option value="${skillId}">${skillName}</options></n>`
+//     }
+//     skillListOptions.addEventListener('change', selectSkill)
+// }
+
+// findSkills()
+
+// function selectSkill(event) {
+//     const skill = event.target.value
+//     const skillName = event.target.options[event.target.selectedIndex].text
+//     document.querySelector('#skill-option').value = skill
+//     heoSkill.innerText = `${skillName}`
+// }
 
 // SHOWCASE THE HERO
 
@@ -116,15 +176,26 @@ async function submitHero(event) {
     const data = new FormData(event.target)
 
     const chosenName = data.get('choose-name')
-    const chosenAbility = data.get('choose-ability')
-    const chosenBackground = data.get('')
-    const chosenCantrip = data.get('')
-    const chosenClass = data.get('')
-    const chosenRace = data.get('')
-    const chosenSkill = data.get('')
-    const chosenSpell = data.get('')
+    const chosenRace = data.get('race-option')
+    const chosenClass = data.get('class-option')
+    const chosenCantrip = data.get('cantrip-option')
+    const chosenSpell = data.get('spell-option')
+    const chosenBackground = data.get('background-option')
 
-    console.log({ name })
+    try {
+        const hero = await axios.post(`http://localhost:3001/heroes`, {
+            chosenName: chosenName,
+            chosenRace: chosenRace,
+            chosenClass: chosenClass,
+            chosenCantrip: chosenCantrip,
+            chosenSpells: chosenSpells,
+            chosenBackground: chosenBackground
+        })
+    } catch(e) {
+        return res.status(500).json({ error: e.message })
+        
+    }
+
 }
 
 const form = document.querySelector('#hero-editor')

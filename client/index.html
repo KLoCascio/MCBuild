@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title> Hero Builder</title>
+    <title>Hero Builder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marvel&family=Orbitron&display=swap" rel="stylesheet">
@@ -41,7 +41,6 @@
                 </div>
 
                 <!-- SELECT RACE -->
-                <!-- was choose-race -->
                 <div id="race-div">
                     <label for="race-name">View Races: </label>
                     <select name="races" id="race-select">
@@ -58,14 +57,21 @@
                         <input type="hidden" id="class-option" name="class-option">
                     </select>
                 </div>
-                <!-- SELECT SUB RACE (STRETCH) -->
                 <!-- SELECT CANTRIPS -->
                 <div id="cantrip-div">
-                    CANTRIPS
+                    <label for="cantrip-name">View Cantrips: </label>
+                    <select name="cantrips" id="cantrip-select">
+                        <option value="select">Select A Cantrip</option>
+                        <input type="hidden" id="cantrip-option" name="cantrip-option">
+                    </select>
                 </div>
                 <!-- SELECT SPELLS -->
                 <div id="spell-div">
-                    SPELLS
+                    <label for="spell-name">View Spells: </label>
+                    <select name="spells" id="spell-select">
+                        <option value="select">Select A Spell</option>
+                        <input type="hidden" id="spell-option" name="spell-option">
+                    </select>
                 </div>
                 <!-- SELECT BACKGROUND -->
                 <div id="background-div">
@@ -76,17 +82,16 @@
                     </select>
                 </div>
                 <!-- ARROW UP/DOWN FOR ABILITIES (STR/DEX/CON/INT/WIS/CHA) -->
-                <div id="ability-div">
+                <!-- <div id="ability-div">
                     ABILITIES
-                </div>
+                </div> -->
                 <!-- SELECT SKILLS -->
-                <div id="skill-div">
-                    SKILLS
-                </div>
-                <!-- SUBMIT BUTTON -->
-                <div id="submitBtnDiv">
-                    <button class="submitBtn" type="submit">Submit Your Hero!</button>
-                </div>
+                <!-- <div id="skill-div">
+                    <label for="skill-name">View Skills: </label>
+                    <select name="skills" id="skill-select">
+                        <option value="select">Select A Skill</option>
+                        <input type="hidden" id="skill-option" name="skill-option">
+                    </select> -->
         </form>
 
     </div>
@@ -101,7 +106,6 @@
         <div id="hero-race">
             RACE
         </div>
-        <!-- DISPLAY SUBRACE (STRETCH) -->
         <!-- DISPLAY CLASS -->
         <div id="hero-class">
             CLASS
@@ -119,13 +123,18 @@
             BACKGROUND
         </div>
         <!-- DISPLAY STAT SPREAD (ABILITIES) -->
-        <div id="hero-abilities">
+        <!-- <div id="hero-abilities">
             ABILITIES
-        </div>
+        </div> -->
         <!-- DISPLAY SKILLS -->
-        <div id="hero-skills">
+        <!-- <div id="hero-skills">
             SKILLS
-        </div>
+        </div> -->
+    </div>
+    <!-- SUBMIT BUTTON -->
+    <div id="submitBtnDiv">
+        <button class="submitBtn" type="submit">Submit Your Hero!</button>
+    </div>
     </div>
 
     </div>
