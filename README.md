@@ -1,22 +1,21 @@
 # MCBuild
 Main Character Builder
 
+![Alt text](image.png)
+https://drive.google.com/file/d/1aamFSOberCkelSeGZH1hors8xIGMVTRa/view
+
 Options:
 01. Name String
 
-02. Race Start with Human/Elf/Half-Elf
+02. Race
 - Human
-
-- Half-Elf
-
 - Elf
-
-03. Subrace
-- Human: N/A
-
-- Half-Elf: 1. High Half-Elf, 2. Wood Half-Elf, 3. Drow Half-Elf
-
-- Elf: 1. High Elf, 2. Wood Elf
+- Drow
+- Half-Elf
+- Half-Orc
+- Halfling
+- Dwarf
+- Gnome
 
 04. Class
 - Barbarian
@@ -69,7 +68,6 @@ Options:
 - Paladin: Oath of the Ancients, Oath of Devotion, Oath of Vengeance
 - Socerer: Wild Magic, Draconic Bloodline, Storm Sorcery
 - Warlock: The Fiend, The Great Old One, The Archfey
-
 05E. Fighting Style
 - Fighter: Fighting Style: Archery, Defence, Duelling, Great Weapon Fighting, Protection, Two-Weapon Fighting
 05F. //Ranger//:
@@ -86,8 +84,7 @@ Options:
 -- Wasteland Wanderer: Fire; Gain resistance to Fire.
 -- Wasteland Wanderer: Poison: Gain resistance to Poison.
 
-
-06. Cantrips *Only Shows up for Specific Class/Races
+06. Cantrips
 - Barbarian: N/A
 
 - Bard (Pick 2): Vicious Mockery, Blade Ward, Mage Hand, True Strike, Friends, Dancing Lights, Light, Minor Illusion
@@ -173,12 +170,13 @@ Options:
 - Urchin
     + Sleight of Hand / Stealth
 
-09. Abilities
+Stretch Goals:
+01. Abilities
 - Stats start at 8, with 27 points to spend.
 - Increasing points in a stat from 8 upto 13, costs 1 point; increasing to 14, and 15 costs 2 points per level. Max starting stat is 15. 
 - Assign a bonus of + 2, and + 1 to 1 stat each of user's choice. 
 
-10. Skills
+02. Skills
 - Starts at -1 with 8 points in the linked stat.
 - Can only add points to skills the MC is proficient in (proficiency is determined by Race, Subrace, Class, and Subclass.)
 //STRENGTH// Athletics, Acrobatics
@@ -190,11 +188,12 @@ Options:
 - Then, assign a 3 bonuses (+2) to the skill roll. 
     + Humans get to add 1 additional +2 bonus to skill rolls.
 
-11. Proficiencies
+03. Proficiencies
 - Determined by Race, Subrace, Class, and Subclass.
 
-Race -> Options: Elf Tiefling Drow Human Githyanki Dwarf Half-Elf Hafling Gnome Dragonborn
-A. IF subrace = true
+04. Subrace
+Options: Elf Tiefling Drow Human Githyanki Dwarf Half-Elf Hafling Gnome Dragonborn
+A. Subraces
 Dragonborn -> Black, Blue, Brass, Bronze, Copper, Gold, Green, Red, Silver, White
 Drow -> Seldarine Drow, or Lolth Drow
 Dwarf -> Gold Dwarf, Shield Dwarf, or Duergar
@@ -204,18 +203,13 @@ Half-Elf -> High Half-Elf, Wood Half-Elf, Drow Half-Elf
 Halfling -> Lightfoot Halfling, and Strongheart Halfling
 Tiefling -> Asmodeus Tiefling, Mephistopheles Tiefling, and Zariel Tiefling
 
-B. IF subrace != true
+B. No Subrace
 Githyanki 
 Half-Orc
 
+: Reset Button, A Share Option?, 
 
-
-
-
-
-NEEDS: Reset Button, A Share Option?, 
-
-Shareable Link:
+05. Shareable Link:
 https://bg3builder.site/?r=Human&n=Chalupacabras&b=Noble&c=Sorcerer&abs=8&abd=15&abc=15&abi=8&abw=8&abch=15&rap=0&cc=Blade+Ward%2CPoison+Spray%2CDancing+Lights%2CMage+Hand&bt=Charisma&bo=Constitution&prs=Intimidation%2CDeception&bs=Perception&cs=Magic+Missile%2CMage+Armour
 
 r=Human ${RACE}

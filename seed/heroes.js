@@ -7,11 +7,11 @@ const main = async () => {
     const newHero = await new Hero(
         {
             chosenName: 'Chalupacabras',
-            chosenRace: race._id,
-            chosenClass: class._id,
-            chosenCantrip: cantrip_id,
-            chosenSpells: spells._id,
-            chosenBackground: background._id
+            chosenRace: 'Human',
+            chosenClass: 'Bard',
+            chosenCantrip: 'Mage Hand',
+            chosenSpells: 'Command',
+            chosenBackground: 'Criminal'
         }
     )
 

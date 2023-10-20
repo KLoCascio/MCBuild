@@ -40,7 +40,8 @@ html {
 #backgrounds-list,
 #cantrips-list, 
 #classes-list,
-#races-list {
+#races-list,
+#heroes-list {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -56,4 +57,15 @@ html {
 #races-list img {
     width: 50px;
     height: 50px;
+}
+
+
+
+#hero-editor,
+#hero-results {
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-around;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 10px;
 }

@@ -151,7 +151,7 @@ function selectBackground(event) {
 //     skillDb = await axios.get(`http://localhost:3001/skills`)
 //     let skills = skillDb.data
 //     const skillListOptions = document.querySelector('#skill-select')
-//     for (let i = 0; i < skills.length; i++) {
+//     for (let i = 0 i < skills.length i++) {
 //         let skillName = skills[i].name
 //         let skillId = skills[i]._id
 //         skillListOptions.innerHTML += `<option value="${skillId}">${skillName}</options></n>`
@@ -183,20 +183,21 @@ async function submitHero(event) {
     const chosenBackground = data.get('background-option')
 
     try {
-        const hero = await axios.post(`http://localhost:3001/heroes`, {
+        await axios.post(`http://localhost:3001/heroes`, {
             chosenName: chosenName,
             chosenRace: chosenRace,
             chosenClass: chosenClass,
             chosenCantrip: chosenCantrip,
-            chosenSpells: chosenSpells,
+            chosenSpell: chosenSpell, 
             chosenBackground: chosenBackground
         })
-    } catch(e) {
-        return res.status(500).json({ error: e.message })
-        
+        } catch (error) {
+        console.error('Error:', error)
     }
-
 }
+
+// const submitButton = document.getElementById('submitBtn')
+// submitButton.addEventListener('click', submitHero)
 
 const form = document.querySelector('#hero-editor')
 form.addEventListener('submit', submitHero)
