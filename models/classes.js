@@ -8,7 +8,7 @@ const Class = new Schema(
         classDescription: { type: String, require: true },
         action: { type: String, require: true },
         actionIcon: { type: String, require: true },
-        actionDescriptionscription: { type: String, require: true },
+        actionDescription: { type: String, require: true },
     }
 )
 

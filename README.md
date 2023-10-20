@@ -1,10 +1,16 @@
 # MCBuild
 Main Character Builder
 
-![Alt text](image.png)
+//Hero Builder - Wire Frame//
+![Wire Frame](<MCBuild Wireframe.png>)
 https://drive.google.com/file/d/1aamFSOberCkelSeGZH1hors8xIGMVTRa/view
 
-Options:
+//Hero Builder - ERD//
+
+![ERD](<MCBuild ERD.png>)
+https://drive.google.com/file/d/1mBqfFpQLnGT8OYghmGyni-Od6rzV7B4a/view?usp=sharing
+
+//Construction of a Hero - BTS//
 01. Name String
 
 02. Race
@@ -170,7 +176,7 @@ Options:
 - Urchin
     + Sleight of Hand / Stealth
 
-Stretch Goals:
+//Stretch Goals://
 01. Abilities
 - Stats start at 8, with 27 points to spend.
 - Increasing points in a stat from 8 upto 13, costs 1 point; increasing to 14, and 15 costs 2 points per level. Max starting stat is 15. 
@@ -207,19 +213,17 @@ B. No Subrace
 Githyanki 
 Half-Orc
 
-: Reset Button, A Share Option?, 
-
-05. Shareable Link:
+05. Sharing Option, Shareable Link:
 https://bg3builder.site/?r=Human&n=Chalupacabras&b=Noble&c=Sorcerer&abs=8&abd=15&abc=15&abi=8&abw=8&abch=15&rap=0&cc=Blade+Ward%2CPoison+Spray%2CDancing+Lights%2CMage+Hand&bt=Charisma&bo=Constitution&prs=Intimidation%2CDeception&bs=Perception&cs=Magic+Missile%2CMage+Armour
 
-r=Human ${RACE}
-&n=Chalupacabras ${NAME}
-&b=Noble ${BACKGROUND}
-&c=Sorcerer ${CLASS}
-&abs=8&abd=15&abc=15&abi=8&abw=8&abch=15&rap=0 ${STATS}
+r=Human
+&n=Chalupacabras
+&b=Noble 
+&c=Sorcerer
+&abs=8&abd=15&abc=15&abi=8&abw=8&abch=15&rap=0 
 STRENGTH=8, DEXTERITY=15, CONSTITUION=15, INT=8, WIS=8, CHA=15
 
-&cc=Blade+Ward%2CPoison+Spray%2CDancing+Lights%2CMage+Hand ${CANTRIPS}
-&bt=Charisma&bo=Constitution ${BONUS2PTS} AND ${BONUS1PT}
+&cc=Blade+Ward%2CPoison+Spray%2CDancing+Lights%2CMage+Hand 
+&bt=Charisma&bo=Constitution
 
-&prs=Intimidation%2CDeception&bs=Perception ${PROFICIENCYSKILLS} = ${BONUSPROFICIENCYSKILL}
+&prs=Intimidation%2CDeception&bs=Perception

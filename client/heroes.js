@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:3001/heroes')
         .then(response => response.json())
         .then(data => {
-            const heroesList = document.getElementById('heroes-list');
+            const heroesList = document.getElementById('heroes-list')
             
             data.forEach(hero => {
-                const heroCard = createheroCard(hero)
-                herosList.appendChild(heroCard)
+                const heroCard = createHeroCard(hero)
+                heroesList.appendChild(heroCard)
             })
         })
         .catch(error => {
@@ -18,25 +18,25 @@ document.addEventListener('DOMContentLoaded', () => {
         card.className = 'hero-card'
 
         const heroName = document.createElement('h2')
-        heroName.textContent = hero.name
+        heroName.textContent = hero.chosenName 
 
         const heroClass = document.createElement('p')
-        heroClass.innerHTML = `<strong>hero Class:</strong> ${hero.heroClass}`
+        heroClass.innerHTML = `<strong>Hero Class:</strong> ${hero.chosenClass}` 
 
-        const damageType = document.createElement('p')
-        damageType.innerHTML = `<strong>Damage Type:</strong> ${hero.damageType}`
+        const cantrip = document.createElement('p')
+        cantrip.innerHTML = `<strong>Cantrip:</strong> ${hero.chosenCantrip}` 
 
-        const dps = document.createElement('p')
-        dps.innerHTML = `<strong>DPS:</strong> ${hero.dps}`
+        const spells = document.createElement('p')
+        spells.innerHTML = `<strong>Spells:</strong> ${hero.chosenSpells}`
 
-        const description = document.createElement('p')
-        description.innerHTML = `<strong>Description:</strong> ${hero.description}`
+        const background = document.createElement('p')
+        background.innerHTML = `<strong>Background:</strong> ${hero.chosenBackground}`
 
         card.appendChild(heroName)
         card.appendChild(heroClass)
-        card.appendChild(damageType)
-        card.appendChild(dps)
-        card.appendChild(description)
+        card.appendChild(cantrip)
+        card.appendChild(spells)
+        card.appendChild(background)
 
         return card
     }
