@@ -3,6 +3,7 @@ const { Schema } = require('mongoose')
 
 const Class = new Schema(
     {
+        name: { type: String, require: true },
         classIcon: { type: String, require: true },
         classDescription: { type: String, require: true },
         action: { type: String, require: true },

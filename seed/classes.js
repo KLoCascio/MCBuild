@@ -5,6 +5,7 @@ db.on('error', console.error.bind(console, 'MongoDB Class connection error:'))
 
 const main = async () => {
     const Barbarian = await new Class({
+        name: 'Barbarian',
         classIcon: '../assets/classes/Barbarian.png',
         classDescription: 'Barbarians use their martial prowess and primal rage to strengthen themselves and dominate enemies in combat. Main Ability Scores are Strength, Dexterity and Constituion',
         action: 'Rage',
@@ -14,6 +15,7 @@ const main = async () => {
     Barbarian.save()
     
     const Bard = await new Class({
+        name: 'Bard',
         classIcon: '../assets/classes/Bard.png',
         classDescription: 'Bards are expert storytellers, artists, and performers. Bards channel their power through song, speech, or performance to cast Spells. Main Ability Score is Charisma.',
         action: 'Bardic Inspiration',
@@ -23,6 +25,7 @@ const main = async () => {
     Bard.save()
     
     const Cleric = await new Class({
+        name: 'Cleric',
         classIcon: '../assets/classes/Cleric.png',
         classDescription: 'Clerics worship and enact the will of their deity to the world, for better or worse. They channel the power of their faith to cast Spells. Main Ability Score is Wisdom.',
         action: 'Channel Divinity',
@@ -32,6 +35,7 @@ const main = async () => {
     Cleric.save()
 
     const Druid = await new Class({
+        name: 'Druid',
         classIcon: '../assets/classes/Druid.png',
         classDescription: 'Druids are closely attuned with nature and the animals that live in it. They utilize the power of nature to cast Spells and have the ability to transform into various creatures. Main Ability Score is Wisdom.',
         action: 'Wild Shape',
@@ -41,6 +45,7 @@ const main = async () => {
     Druid.save()
 
     const Fighter = await new Class({
+        name: 'Fighter',
         classIcon: '../assets/classes/Fighter.png',
         classDescription: 'Fighters use their martial expertise to fight enemies and support their allies in combat. Main Ability Scores are Strength or Dexterity.',
         action: 'Second Wind',
@@ -50,6 +55,7 @@ const main = async () => {
     Fighter.save()
 
     const Monk = await new Class({
+        name: 'Monk',
         classIcon: '../assets/classes/Monk.png',
         classDescription: 'Monks are unarmed combatants capable of spending Ki Points to perform special abilities. Main Ability Scores are Dexterity (or Strength), Dexterity and Constituion.',
         action: 'Flurry of Blows',
@@ -59,6 +65,7 @@ const main = async () => {
     Monk.save()
 
     const Paladin = await new Class({
+        name: 'Paladin',
         classIcon: '../assets/classes/Paladin.png',
         classDescription: 'Paladins are masters of a variety of weapons and armour. They channel the power of their sacred oath to heal the sick and injured, while smiting their foes. Main Ability Scores are Strength, Charisma and Constituion',
         action: 'Lay on Hands',
@@ -68,6 +75,7 @@ const main = async () => {
     Paladin.save()
 
     const Ranger = await new Class({
+        name: 'Ranger',
         classIcon: '../assets/classes/Ranger.png',
         classDescription: 'Rangers are in tune with nature and their surroundings. Rangers utilize both their knowledge of the wilds and spellcasting to pursue their prey. Main Ability Scores are Dexterity, Constitution and Wisdom.',
         action: 'Natural Explorer',
@@ -77,6 +85,7 @@ const main = async () => {
     Ranger.save()
 
     const Rogue = await new Class({
+        name: 'Rogue',
         classIcon: '../assets/classes/Rogue.png',
         classDescription: 'Rogues are well versed in the art of stealth and rely on their resourcefulness to be in control of any challenging situation. Main Ability Score is Dexterity.',
         action: 'Sneak Attack',
@@ -86,6 +95,7 @@ const main = async () => {
     Rogue.save()
 
     const Sorcerer = await new Class({
+        name: 'Sorcerer',
         classIcon: '../assets/classes/Sorcerer.png',
         classDescription: 'Sorcerers use their innate magical powers to fight enemies and aid allies in combat. Main Ability Score is Charisma.',
         action: 'Metamagic',
@@ -95,6 +105,7 @@ const main = async () => {
     Sorcerer.save()
 
     const Warlock = await new Class({
+        name: 'Warlock',
         classIcon: '../assets/classes/Warlock.png',
         classDescription: 'Warlocks channel a pact made with their Patron to fight enemies and aid allies. Main Ability Score is Charisma.',
         action: 'Pact Magic',
@@ -104,6 +115,7 @@ const main = async () => {
     Warlock.save()
 
     const Wizard = await new Class({
+        name: 'Wizard',
         classIcon: '../assets/classes/Wizard.png',
         classDescription: 'Wizards channel magic through their extensive knowledge of the arcane to fight enemies and aid allies. Main Ability Score is Intelligence. ',
         action: 'Arcane Recovery',

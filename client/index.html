@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,123 +10,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marvel&family=Orbitron&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../assets/SwordFav.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/SwordFav.ico">
 </head>
+
 <body>
     <div id="header-content">
-        <img src="../assets/index/IndexBanner.jpeg" />
+        <img src="../assets/banners/IndexBanner.jpeg" />
     </div>
 
     <div id="navbar">
         <nav>
             <ul class="navbar">
-                <a href="index.html">HOME</a> |
-                <a href ="#">BACKGROUNDS</a> |
-                <a href ="#">CANTRIPS</a> |
-                <a href ="#">CLASSES</a> |
-                <a href ="#">RACES</a> |
-                <a href ="#">SKILLS</a> |
-                <a href ="#">SPELLS</a>
+                <a href="./backgrounds.html">BACKGROUNDS</a> |
+                <a href="./cantrips.html">CANTRIPS</a> |
+                <a href="./classes.html">CLASSES</a> |
+                <a href="./races.html">RACES</a> |
+                <a href="./spells.html">SPELLS</a>
             </ul>
         </nav>
     </div>
 
     <div id="content">
-        <!-- Area for Input -->
-        <div id="heroBuilder">
-            <!-- TYPE NAME -->
-            <div id="chooseName">
-                NAME
-            </div>
-            <!-- SELECT RACE -->
-            <div id="chooseRace">
-                <label for="race-name">View Races: </label>
-                <select name="races" id="race-select">
-                    <option value="select">Select Race</option>
-                    <input type="hidden" id="race-choice" name="race-choice">
-                    <!-- Dropdown via JS Script -->
-                </select>
-            </div>
-            <!-- SELECT CLASS -->
-            <div id="chooseClass">
-                CLASS
-            </div>
-            <!-- SELECT SUB RACE (STRETCH) -->
-            <!-- SELECT CANTRIPS -->
-            <div id="chooseCantrips">
-                CANTRIPS
-            </div>
-            <!-- SELECT SPELLS -->
-            <div id="chooseSpells">
-                SPELLS
-            </div>
-            <!-- SELECT BACKGROUND -->
-            <div id="chooseBackground">
-                BACKGROUND
-            </div>
-            <!-- ARROW UP/DOWN FOR ABILITIES (STR/DEX/CON/INT/WIS/CHA) -->
-            <div id="chooseAbilities">
-                ABILITIES
-            </div>
-            <!-- SELECT SKILLS -->
-            <div id="chooseSkills">
-                SKILLS
-            </div>
-            <!-- SUBMIT BUTTON -->
-            <div id="submitBtnDiv">
-                <button class="submitBtn" type="submit">Submit Your Hero!</button>
-            </div>
+        <form id="hero-editor">
+            <!-- Area for Input -->
+            <div id="heroBuilder">
+                <!-- TYPE NAME -->
+                <div id="name-div">
+                    <label for="choose-name">Hero's Name: </label>
+                    <input type="text" id="choose-name" name="choose-name">
+                </div>
 
-        </div>
+                <!-- SELECT RACE -->
+                <!-- was choose-race -->
+                <div id="race-div">
+                    <label for="race-name">View Races: </label>
+                    <select name="races" id="race-select">
+                        <option value="select">Select Race</option>
+                        <input type="hidden" id="race-option" name="race-option">
+                    </select>
+                </div>
 
-        <!-- Area for Results -->
-        <div id="heroResults">
-            <!-- DISPLAY NAME -->
-            <div id="heroName">
-                NAME
-            </div>
-            <!-- DISPLAY RACE -->
-            <div id="heroRace">
-                RACE
-            </div>
-            <!-- DISPLAY SUBRACE (STRETCH) -->
-            <!-- DISPLAY CLASS -->
-            <div id="heroClass">
-                CLASS
-            </div>
-            <!-- DISPLAY CANTRIPS -->
-            <div id="heroCantrips">
-                CANTRIPS
-            </div>
-            <!-- DISPLAY SPELLS -->
-            <div id="heroSpells">
-                SPELLS
-            </div>
-            <!-- DISPLAY BACKGROUND -->
-            <div id="heroBackground">
-                BACKGROUND
-            </div>
-            <!-- DISPLAY STAT SPREAD (ABILITIES) -->
-            <div id="heroAbilities">
-                ABILITIES
-            </div>
-            <!-- DISPLAY SKILLS -->
-            <div id="heroSkills">
-                SKILLS
-            </div>
-        </div>
+                <!-- SELECT CLASS -->
+                <div id="class-div">
+                    <label for="class-name">View Classes: </label>
+                    <select name="classes" id="class-select">
+                        <option value="select">Select Class</option>
+                        <input type="hidden" id="class-option" name="class-option">
+                    </select>
+                </div>
+                <!-- SELECT SUB RACE (STRETCH) -->
+                <!-- SELECT CANTRIPS -->
+                <div id="cantrip-div">
+                    CANTRIPS
+                </div>
+                <!-- SELECT SPELLS -->
+                <div id="spell-div">
+                    SPELLS
+                </div>
+                <!-- SELECT BACKGROUND -->
+                <div id="background-div">
+                    <label for="background-name">View Backgrounds: </label>
+                    <select name="backgrounds" id="background-select">
+                        <option value="select">Select Background</option>
+                        <input type="hidden" id="background-option" name="background-option">
+                    </select>
+                </div>
+                <!-- ARROW UP/DOWN FOR ABILITIES (STR/DEX/CON/INT/WIS/CHA) -->
+                <div id="ability-div">
+                    ABILITIES
+                </div>
+                <!-- SELECT SKILLS -->
+                <div id="skill-div">
+                    SKILLS
+                </div>
+                <!-- SUBMIT BUTTON -->
+                <div id="submitBtnDiv">
+                    <button class="submitBtn" type="submit">Submit Your Hero!</button>
+                </div>
+        </form>
 
     </div>
 
+    <!-- Area for Results -->
+    <div id="hero-results">
+        <!-- DISPLAY NAME -->
+        <div id="hero-name">
+            NAME
+        </div>
+        <!-- DISPLAY RACE -->
+        <div id="hero-race">
+            RACE
+        </div>
+        <!-- DISPLAY SUBRACE (STRETCH) -->
+        <!-- DISPLAY CLASS -->
+        <div id="hero-class">
+            CLASS
+        </div>
+        <!-- DISPLAY CANTRIPS -->
+        <div id="hero-cantrips">
+            CANTRIPS
+        </div>
+        <!-- DISPLAY SPELLS -->
+        <div id="hero-spells">
+            SPELLS
+        </div>
+        <!-- DISPLAY BACKGROUND -->
+        <div id="hero-background">
+            BACKGROUND
+        </div>
+        <!-- DISPLAY STAT SPREAD (ABILITIES) -->
+        <div id="hero-abilities">
+            ABILITIES
+        </div>
+        <!-- DISPLAY SKILLS -->
+        <div id="hero-skills">
+            SKILLS
+        </div>
+    </div>
 
-    <!-- FIND ICONS FOR GITHUB/EMAIL/PORTFOLIO -->
+    </div>
+
     <div id="footer">
         <ul id="footer-contacts">
-            <a target="_blank" href="https://www.linkedin.com/in/kyndallocascio/"><img id="linkedin" src="../assets/LinkedInIcon.webp" ></a>
-            <a target="_blank" href="https://github.com/KLoCascio"><img id="github" src="../assets/GitHub_Icon.png" ></a>
-            <a target="_blank" href=""><img id="email" src="../assets/LinkedInIcon.webp" ></a>
+            <a href="https://github.com/KLoCascio" target="_blank"><img id="github" src="../assets/icons/GitHub_Icon.png"></a>
+            <a href="https://www.linkedin.com/in/kyndallocascio" target="_blank" ><img id="linkedin" src="../assets/icons/LinkedInIcon.webp"></a>
+            <a href="mailto:KyndalLoCascio@gmail.com?subject=Love%20The%20Page&body=You%20did%20an%20amazing%20job%20Kyndal.%20I,%20Jeremy%20Taubman,%20give%20you%20an%20A+" target="_blank" ><img id="email" src="../assets/icons/EmailIcon.png"></a>
+
         </ul>
     </div>
     <script defer src="scripts.js"></script>
 </body>
+
 </html>

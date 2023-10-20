@@ -2,11 +2,12 @@ html {
     background-color: black;
     color: white;
     font-family: 'Marvel', sans-serif;
+    margin: 5px;
 }
 
 
-
-#navbar {
+#navbar,
+#footer {
     text-align: center;
     padding: 5px;
     margin: 0 auto;
@@ -33,4 +34,26 @@ html {
 #footer img {
     height: 40px;
     width: 40px;
+}
+
+#spells-list,
+#backgrounds-list,
+#cantrips-list, 
+#classes-list,
+#races-list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#spells-list img,
+#backgrounds-list img,
+#cantrips-list img,
+#classes-list img,
+#races-list img {
+    width: 50px;
+    height: 50px;
 }
