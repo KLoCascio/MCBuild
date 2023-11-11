@@ -1,8 +1,7 @@
 # MCBuild
-Main Character Builder
 
 ## Description
-A Full-Stack Project design to test my skills. An extensive database seeded with over 100 objects to be used by a user to build the perfect Main Character (MC). Full CRUD across the Back End, and the ability for the user to create and save a Main Character to a Hero Database.
+A Full-Stack Project design to test my skills. Utilizing a database built and seeded with over 100 objects to be used by the user to build the perfect Main Character (MC). Full CRUD across the Back End, and the ability for the user to create and save a Main Character to a Hero Database.
 
 ## Technologies
 - HTML
