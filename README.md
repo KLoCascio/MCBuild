@@ -1,19 +1,34 @@
 # MCBuild
 Main Character Builder
 
-//Hero Builder - Wire Frame//
-![Wire Frame](<MCBuild Wireframe.png>)
-https://drive.google.com/file/d/1aamFSOberCkelSeGZH1hors8xIGMVTRa/view
+## Description
+A Full-Stack Project design to test my skills. An extensive database seeded with over 100 objects to be used by a user to build the perfect Main Character (MC). Full CRUD across the Back End, and the ability for the user to create and save a Main Character to a Hero Database.
 
-//Hero Builder - ERD//
+## Technologies
+- HTML
+- JavaScript
+- Responsive CSS
+- Node
+- Express
+- MongoDB
 
-![ERD](<MCBuild ERD.png>)
+## MC Builder: Wire Frame
+![MC Builder Wire Frame](<assets/index/MCBuild Wireframe.png>)
+
+## MC Builder: ERD
+![ERD](<assets/index/MCBuild ERD.png>)
 https://drive.google.com/file/d/1mBqfFpQLnGT8OYghmGyni-Od6rzV7B4a/view?usp=sharing
 
-//Construction of a Hero - BTS//
-01. Name String
+## Contact
+- LinkedIn: https://www.linkedin.com/in/kyndallocascio/
+- Github: https://github.com/KLoCascio
 
-02. Race
+## Construction of a Hero: Behind-the-Scenes
+![Create a MC Page](assets/index/MCBuildCreate.png)
+01. Name String: Type in your Main Character's Name.
+
+![Race Database Rendering](assets/index/MCBuildRaces.png)
+02. Race: Select a Race for your Main Character from (8 Races):
 - Human
 - Elf
 - Drow
@@ -23,7 +38,8 @@ https://drive.google.com/file/d/1mBqfFpQLnGT8OYghmGyni-Od6rzV7B4a/view?usp=shari
 - Dwarf
 - Gnome
 
-04. Class
+![Class Database Rendering](assets/index/MCBuildClasses.png)
+03. Class: Select a Class for your Main Character from (12 Classes):
 - Barbarian
 - Bard
 - Cleric
@@ -37,193 +53,97 @@ https://drive.google.com/file/d/1mBqfFpQLnGT8OYghmGyni-Od6rzV7B4a/view?usp=shari
 - Warlock
 - Wizard
 
-05. Extras
-05A. Actions
-- Barbarian: Rage
-- Bard: Bardic Inspiration
-- Cleric/Subclass/Trickery Domain: Blessing of the Trickster
-- Druid: N/A
-- Fighter: Second Wind
-- Monk: Flurry of Blows
-- Paladin: Lay on Hands, Divine Sense
--- Paladin/Subclass/Oath of the Ancients: Healing Radiance
--- Paladin/Subclass/Oath of Devotion: Holy Rebuke
--- Paladin/Subclass/Oath of Vengeance: Inquisitor's Might
-- Ranger: N/A
-- Rogue: Sneak Attack (Melee), Sneak Attack (Range)
-- Sorcerer: N/A
-- Warlock/Subclass/The Archfey: Fey Presence
-- Wizard: Arcane Recovery
-05B. Class Features
-- Barbarian
-- Bard
-- Cleric
-- Druid
-- Fighter
-- Monk
-- Paladin
-- Ranger
-- Rogue
-- Sorcerer
-- Warlock
-- Wizard
-05C. Starting Instrument (Bard Only)
-- Bard: Hand Drum, Flute, Lute, Lyre, Violin
-05D. Subclass
-- Cleric: Life Domain, Light Domain, Trickery Domain, Knowledge Domain, Nature Domain, Tempest Domain, War Domain
-- Paladin: Oath of the Ancients, Oath of Devotion, Oath of Vengeance
-- Socerer: Wild Magic, Draconic Bloodline, Storm Sorcery
-- Warlock: The Fiend, The Great Old One, The Archfey
-05E. Fighting Style
-- Fighter: Fighting Style: Archery, Defence, Duelling, Great Weapon Fighting, Protection, Two-Weapon Fighting
-05F. //Ranger//:
-- Favoured Enemy: Bounty Hunter, Keeper of the Veil, Mage Breaker, Ranger Knight, Sanctified Stalker
--- Bounty Hunter: PROFICIENCY in Investigation; Creatures w/ Ensnaring Strike have Disadvantage on their Saving Throw.
--- Keeper of the Veil: Grants Spell 'Protection from Evil and Good', and PROFICIENCY in Arcana.
--- Mage Breaker: Grants Cantrip 'True Strike', and PROFICIENCY in Arcana.
--- Ranger Knight: PROFICIENCY in History and Heavy Armour.
--- Sanctified Stalker: Grants Cantrip 'Sacred Flame' and PROFICIENCY in Religion.
-- Natural Explorer: Beast Tamer, Urban Tracker, Wasteland Wanderer: Cold, Wasteland Wanderer: Fire, Wasteland Wanderer: Poison
--- Beast Tamer: Grants "Find Familiar" (no spell slot)
--- Urban Tracker: Grants PROFICIENCY in Sleight of Hand.
--- Wasteland Wanderer: Cold: Gain resistance to Cold.
--- Wasteland Wanderer: Fire; Gain resistance to Fire.
--- Wasteland Wanderer: Poison: Gain resistance to Poison.
+![Cantrips Database Rendering](assets/index/MCBuildCantrips.png)
+04. Cantrips: Select a Cantrip for your Main Character from (23 Cantrips):
+- Acid Splash
+- Blade Ward
+- Bone Chill
+- Dancing Lights
+- Eldritch Blast
+- Entangle
+- Fire Bolt
+- Friends
+- Guidance
+- Light
+- Mage Hand
+- Minor Illusion
+- Poison Spray
+- Produce Flame
+- Ray of Frost
+- Resistance
+- Sacred Flame
+- Shillelagh
+- Shocking Grasp
+- Thaumaturgy
+- Thorn Whip
+- True Strike
+- Vicious Mockery
 
-06. Cantrips
-- Barbarian: N/A
+![Spells Database Rendering](assets/index/MCBuildSpells.png)
+05. Spells: Select a Spell for your Main Character from (52 Spells):
+- Animal Friendship
+- Armour of Agathys
+- Arms of Hadar
+- Bane
+- Bless
+- Burning Hands
+- Charm Person
+- Chromatic Orb
+- Colour Spray
+- Command
+- Compelled Duel
+- Create or Destroy Water
+- Cure Wounds
+- Disguise Self
+- Dissonant Whispers
+- Divine Favour
+- Enhance Leap
+- Ensnaring Strike
+- Entangle
+- Expeditious Retreat
+- Faerie Fire
+- False Life
+- Feather Fall
+- Find Familiar
+- Fog Cloud
+- Goodberry
+- Grease
+- Guiding Bolt
+- Hail of Thorns 
+- Healing Word
+- Hellish Rebuke
+- Heroism
+- Hex
+- Hunter's Mark
+- Ice Knife
+- Inflict Wounds
+- Longstrider
+- Mage Armour
+- Magic Missile
+- Protection from Evil and Good
+- Ray of Sickness
+- Sanctuary
+- Searing Smite
+- Shield
+- Shield of Faith
+- Sleep
+- Speak with Animals
+- Tasha's Hideous Laughter
+- Thunderous Smite
+- Thunderwave
+- Witch Bolt
+- Wrathful Smite
 
-- Bard (Pick 2): Vicious Mockery, Blade Ward, Mage Hand, True Strike, Friends, Dancing Lights, Light, Minor Illusion
-
-- Cleric (Pick 3): Thaumaturgy, Sacred Flame, Guidance, Resistance, Light, Blade Ward, Produce Flame
--- Cleric/Subclass/Nature (Pick 1): Poison Spray, Produce Flame, Shillelagh, Thorn Whip
--- Cleric/Subclass/Light: Light
-
-- Druid (Pick 2): Guidance, Poison Spray, Produce Flame, Resistance, Shillelagh, Thorn Whip
-
-- Fighter: N/A
-
-- Monk: N/A
-
-- Paladin: N/A
-
-- Ranger: N/A
-
-- Rogue: N/A
-
-- Sorcerer (Pick 4): Blade Ward, Acid Splash, Mage Hand, Poison Spray, True Strike, Friends, Dancing Lights, Fire Bolt, Light, Ray of Frost, Shocking Grasp, minor Illusion, Bone Chill
-
-- Warlock (Pick 2): Blade Ward, Bone Chill, Eldritch Blast, Friends, Mage Hand, Minor Illusion, Poison Spray, True Strike
-
-- Wizard (Pick 3): Acid Splash, Bone Chill, Fire Bolt, Poison Spray, Ray of Frost, Shocking Grasp, Blade Ward, Friends, Dancing Lights, Light, Mage Hand, Minor Illusion, True Strike
-
-07. Spells
-- Barbarian: N/A
-- Bard(Pick 2): Animal Friendship, Bane, Charm Person, Cure Wounds, Disguise Self, Dissonant Whispers, Faerie Fire, Feather Fall, Healing Word, Heroism, Longstrider, Sleep, Speak with Animals, Tasha's Hideous Laughter, Thunderwave
-- Cleric (Pick 1 + WISDOM MOD): Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Sanctuary, Shield of Faith
--- Cleric/Subclasses:
---- Life: Cure Wounds
---- Light: Burning Hands, Faerie Fire
---- Trickery: Charm Person, Disguise Self
---- Knowledge: Command, Sleep
---- Nature: Speak with Animals, Animal Friendship
---- Tempest: Thunderwave, Fog Cloud
---- War: Divine Favour, Shield of Faith
-
-- Druid (Pick 1 + WISDOM MOD): Animal Friendship, Charm Person, Create or Destroy Water, Cure Wounds, Enhance Leap, Entangle, Faerie Fire, Fog Cloud, Goodberry, Healing Word, Ice Knife, Longstrider, Speak with Animals, Thunderwave
-
-- Fighter: N/A
-- Monk: N/A
-- Paladin: N/A
-- Ranger: N/A
-- Rogue: N/A
-
-- Sorcerer (Pick 2): Burning Hands, Charm Person, Chromatic Orb, Colour Spray, Disguise Self, Enhance Leap, Expeditious Retreat, False Life, Feather Fall, Fog Cloud, Ice Knife, Mage Armour, Magic Missile, Ray of Sickness, Shield, Sleep, Thunderwave, Witch Bolt
--- ??SORCERER/DRACONIC BLOODLINE??
-
-- Warlock (Pick 2): Armour of Agathys, Arms of Hadar, Charm Person, Expeditious Retreat, Hellish Rebuke, Hex, Protection from Evil and Good, Witch Bolt
--- Warlock/Subclass/The Fiend: Burning Hands, Command
--- Warlock/Subclass/The Great Old One: Dissonant Whispers, Tasha's Hideous Laughter
--- Warlock/Subclass/The Archfey: Faerie Fire, Sleep
-
-- Wizard (Pick 3): Burning Hands, Charm Person, Chromatic Orb, Colour Spray, Disguise Self, Enhance Leap, Expeditious Retreat, False Life, Feather Fall, Find Familiar, Fog Cloud, Grease, Ice Knife, Longstrider, Mage Armour, Magic Missile, Protection from Evil and Good, Ray of Sickness, Shield, Sleep, Tasha's Hideous Laughter, Thunderwave, Witch Bolt.
--- Wizard/Subclass/Conjuration: Minor Conjuration: Create Water (no spell shot 1/SR)
--- Wizard/Subclass/Enchantment: Hypnotic Gaze
--- Wizard/Subclass/Illusion: Improved Minor Illusion
--- 
-
-08. Background
+![Background Database Rendering](assets/index/MCBuildBackgrounds.png)
+06. Background: Select a Background for your Main Character from (11 Backgrounds):
 - Acolyte
-    + Insight / Religion
 - Charlatan
-    + Deception / Sleight of Hand
 - Criminal
-    + Deception / Stealth
 - Entertainer
-    + Acrobatics / Performance
 - Folk Hero
-    + Animal Handling / Survival
 - Guild Artisan
-    + Insight / Persuasion
 - Noble
-    + History / Persuasion
 - Outlander
-    + Athletics / Survival
 - Sage
-    + Arcana / History
 - Soldier
-    + Athletics / Intimidation
 - Urchin
-    + Sleight of Hand / Stealth
-
-//Stretch Goals://
-01. Abilities
-- Stats start at 8, with 27 points to spend.
-- Increasing points in a stat from 8 upto 13, costs 1 point; increasing to 14, and 15 costs 2 points per level. Max starting stat is 15. 
-- Assign a bonus of + 2, and + 1 to 1 stat each of user's choice. 
-
-02. Skills
-- Starts at -1 with 8 points in the linked stat.
-- Can only add points to skills the MC is proficient in (proficiency is determined by Race, Subrace, Class, and Subclass.)
-//STRENGTH// Athletics, Acrobatics
-//DEXTERITY// Sleight of Hand, Stealth
-//INTELLIGENCE// Arcana, History, Investigation, Nature, Religion
-//WISDOM// Animal Handling, Insight, Medicine, Perception, Survival
-//CHARISMA// Deception, Intimidation, Performance, Persuasion
-- Every even number increases the skill roll by 1. ie, 8 Strength = -1 to Str Skill Roll, 10 Strength = 0 to Str Skill Roll, 12 Strength = 1 to Str Skill Roll.
-- Then, assign a 3 bonuses (+2) to the skill roll. 
-    + Humans get to add 1 additional +2 bonus to skill rolls.
-
-03. Proficiencies
-- Determined by Race, Subrace, Class, and Subclass.
-
-04. Subrace
-Options: Elf Tiefling Drow Human Githyanki Dwarf Half-Elf Hafling Gnome Dragonborn
-A. Subraces
-Dragonborn -> Black, Blue, Brass, Bronze, Copper, Gold, Green, Red, Silver, White
-Drow -> Seldarine Drow, or Lolth Drow
-Dwarf -> Gold Dwarf, Shield Dwarf, or Duergar
-Elf -> High Elf, or Wood Elf
-Gnome -> Forest Gnome, Deep Gnome, and Rock Gnome
-Half-Elf -> High Half-Elf, Wood Half-Elf, Drow Half-Elf
-Halfling -> Lightfoot Halfling, and Strongheart Halfling
-Tiefling -> Asmodeus Tiefling, Mephistopheles Tiefling, and Zariel Tiefling
-
-B. No Subrace
-Githyanki 
-Half-Orc
-
-05. Sharing Option, Shareable Link:
-https://bg3builder.site/?r=Human&n=Chalupacabras&b=Noble&c=Sorcerer&abs=8&abd=15&abc=15&abi=8&abw=8&abch=15&rap=0&cc=Blade+Ward%2CPoison+Spray%2CDancing+Lights%2CMage+Hand&bt=Charisma&bo=Constitution&prs=Intimidation%2CDeception&bs=Perception&cs=Magic+Missile%2CMage+Armour
-
-r=Human
-&n=Chalupacabras
-&b=Noble 
-&c=Sorcerer
-&abs=8&abd=15&abc=15&abi=8&abw=8&abch=15&rap=0 
-STRENGTH=8, DEXTERITY=15, CONSTITUION=15, INT=8, WIS=8, CHA=15
-
-&cc=Blade+Ward%2CPoison+Spray%2CDancing+Lights%2CMage+Hand 
-&bt=Charisma&bo=Constitution
-
-&prs=Intimidation%2CDeception&bs=Perception
